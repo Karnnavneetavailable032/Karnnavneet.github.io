@@ -1,111 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Karn Navneet | Portfolio</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
-    body { background: linear-gradient(135deg, #020617, #0f172a); color: #e5e7eb; }
-    header { padding: 80px 20px; text-align: center; }
-    header h1 { font-size: 3rem; color: #38bdf8; }
-    header p { margin-top: 12px; font-size: 1.2rem; color: #cbd5f5; }
-    section { padding: 50px 20px; max-width: 1000px; margin: auto; }
-    h2 { color: #38bdf8; margin-bottom: 20px; font-size: 2rem; }
-    .card { background: rgba(2,6,23,0.9); padding: 25px; border-radius: 16px; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.4); transition: transform 0.3s; }
-    .card:hover { transform: translateY(-6px); }
-    ul { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
-    ul li { background: #020617; padding: 10px; border-radius: 8px; text-align: center; }
-    a { color: #38bdf8; text-decoration: none; }
-    footer { text-align: center; padding: 30px; color: #94a3b8; }
-    .btn { display: inline-block; margin-top: 20px; padding: 12px 25px; border-radius: 30px; background: #38bdf8; color: #020617; font-weight: bold; }
-      /* simple JS animation hook */
-    .fade-in { opacity: 0; transform: translateY(20px); transition: all 0.6s ease; }
-    .fade-in.show { opacity: 1; transform: translateY(0); }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./js.js">
 </head>
 <body>
-
-<header>
-  <h1>Karn Navneet</h1>
-  <p>B.Tech CSE Student | Web Developer | Internship Seeker</p>
-  <a class="btn" href="#contact">Contact Me</a>
-</header>
-
-<section>
-  <h2>About Me</h2>
-  <div class="card">
-    <p>I am a B.Tech Computer Science and Engineering student (4th Semester, Section G) at Brainware University. I have hands-on experience with HTML and CSS and I am actively building web projects. I am passionate about learning, problem-solving, and gaining real-world industry exposure through internships.</p>
-  </div>
-</section>
-
-<section>
-  <h2>Skills</h2>
-  <div class="card">
-    <ul>
-      <li>HTML5</li>
-      <li>CSS3 (Flexbox, Grid)</li>
-      <li>JavaScript (DOM, Events)</li>
-      <li>Java (Basics)</li>
-      <li>C Programming</li>
-      <li>Responsive Design</li>
-      <li>Problem Solving</li>
-    </ul>
-  </div>
-</section>
-
-<section>
-  <h2>Projects</h2>
-  <div class="card">
-    <h3>Personal Portfolio Website</h3>
-    <p>Designed and developed a responsive portfolio website using HTML and CSS. Focused on clean UI, accessibility, and performance.</p>
-  </div>
-  <div class="card">
-    <h3>HTML & CSS Mini Projects</h3>
-    <p>Built multiple small projects including forms, landing pages, and layouts to strengthen frontend fundamentals.</p>
-  </div>
-</section>
-
-<section id="contact">
-  <h2>Contact</h2>
-  <div class="card">
-    <p><strong>Email:</strong> your-email@example.com</p>
-    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com">linkedin.com/in/yourprofile</a></p>
-    <p><strong>GitHub:</strong> <a href="https://github.com">github.com/yourusername</a></p>
-  </div>
-</section>
-
-<section>
-  <h2>Education</h2>
-  <div class="card">
-    <p><strong>B.Tech in Computer Science & Engineering</strong></p>
-    <p>Brainware University | 4th Semester | Section G</p>
-  </div>
-</section>
-
-<section>
-  <h2>Certifications & Activities</h2>
-  <div class="card">
-    <ul>
-      <li>Participation certificates from technical workshops and events</li>
-      <li>Hands-on practice with frontend projects</li>
-      <li>Continuous learning via self-study and online resources</li>
-    </ul>
-  </div>
-</section>
-
-<footer>
-  <p>© 2026 Karn Navneet | Built with ❤️ and consistency</p>
-</footer>
-
-  <script>
-    const cards = document.querySelectorAll('.card');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) entry.target.classList.add('show');
-      });
-    }, { threshold: 0.2 });
-    cards.forEach(card => { card.classList.add('fade-in'); observer.observe(card); });
-  </script>
+    <div class="ai-note">
+  <span class="ai-note-close" onclick="this.parentElement.style.display='none'">×</span>
+  <div class="ai-note-title">Note</div>
+  <p>
+    This website includes a <strong>GPT-assisted in-class project</strong>,
+    created during a single class session for learning and practice purposes.
+  </p>
+</div>
 </body>
 </html>
